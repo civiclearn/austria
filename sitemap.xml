@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://staatsburgerschaftstest.at/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Core conversion page -->
+  <url>
+    <loc>https://staatsburgerschaftstest.at/kostenloser-test.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Core informational articles -->
+  <url>
+    <loc>https://staatsburgerschaftstest.at/einbuergerungsvoraussetzungen.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/ueber-den-staatsbuergerschaftstest.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/themen-des-staatsbuergerschaftstests.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/schwierigste-themen-im-staatsbuergerschaftstest.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/so-funktioniert-unser-training.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/vorbereitung-und-lernmaterialien.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Secondary -->
+  <url>
+    <loc>https://staatsburgerschaftstest.at/kontakt.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.40</priority>
+  </url>
+
+  <!-- Legal (low priority, indexed but de-emphasized) -->
+  <url>
+    <loc>https://staatsburgerschaftstest.at/datenschutz.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.20</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/rueckerstattung.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.20</priority>
+  </url>
+
+  <url>
+    <loc>https://staatsburgerschaftstest.at/cookie-richtlinie.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.20</priority>
+  </url>
+
+</urlset>

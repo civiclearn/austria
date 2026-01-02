@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kostenloser Übungstest – Österreichischer Staatsbürgerschaftstest</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="https://staatsbuergerschaftstest.at/kostenloser-test.html" />
+  <meta name="description"
+        content="Kostenloser Übungstest zur Vorbereitung auf den österreichischen Staatsbürgerschaftstest. Lernen Sie Fragetypen, Themen und Aufbau des offiziellen Tests kennen." />
+  <meta name="keywords"
+        content="österreich staatsbürgerschaft test kostenlos, staatsbürgerschaftstest übung, einbürgerung test österreich, staatskunde österreich" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kostenloser Übungstest – Österreichischer Staatsbürgerschaftstest" />
+  <meta property="og:description"
+        content="Lernen Sie Aufbau und Inhalte des österreichischen Staatsbürgerschaftstests kennen." />
+  <meta property="og:url" content="https://staatsbuergerschaftstest.at/kostenloser-test.html" />
+  <meta property="og:image" content="https://staatsbuergerschaftstest.at/assets/img/og-default.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts + styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/shared.css">
+  <link rel="stylesheet" href="/assets/css/testpages.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a href="/" class="brand-link">
+        <img src="/assets/images/at.svg" alt="Österreich">
+        <div class="brand-title">Staatsbürgerschaftstest Österreich</div>
+      </a>
+    </div>
+
+    <div class="header-center">
+      <nav class="header-nav">
+        <a href="/kostenloser-test.html" class="active">Kostenloser Test</a>
+        <a href="/kontakt.html">Kontakt</a>
+		<a href="https://civiclearn.com/austria/login">Login</a>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="brand-powered">
+        powered by <span>CivicLearn</span>
+      </div>
+      <a href="/#preise" class="btn-small-purple">
+        Vorbereitung starten
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- INTRO -->
+  <section class="free-test-intro">
+    <h1>Kostenloser Übungstest<br>für den Staatsbürgerschaftstest</h1>
+
+    <p>
+      Dieser kostenlose Übungstest hilft Ihnen, sich mit den Fragetypen und Themen
+      des österreichischen Staatsbürgerschaftstests vertraut zu machen.
+    </p>
+
+    <p>
+      Die Inhalte orientieren sich an den offiziellen Prüfungsbereichen:
+      Geschichte Österreichs, demokratische Ordnung, Rechte und Pflichten
+      sowie Grundlagen der Bundesländer.
+    </p>
+
+    <p>
+      Nutzen Sie diesen Test als erste Standortbestimmung,
+      um Ihr aktuelles Wissen einzuschätzen und gezielt weiter zu lernen.
+    </p>
+  </section>
+
+  <!-- TEST HEADER -->
+  <div class="test-header">
+    <div>
+      <div class="badge">Kostenloser Test – 10 Fragen</div>
+      <div class="progress" id="progressLabel">Frage 1 von 10 · Punkte 0</div>
+    </div>
+    <div class="timer badge" id="timer">10:00</div>
+  </div>
+
+  <!-- QUESTION CARD -->
+  <div class="question-card">
+    <div class="q-title" id="qTitle">…</div>
+    <div class="choices" id="choices"></div>
+
+    <div class="controls">
+      <button class="btn secondary" id="btnPrev" disabled>← Zurück</button>
+      <button class="btn" id="btnNext" disabled>Weiter →</button>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="resultPanel" class="result-panel" style="display:none;">
+    <h2>Ergebnis</h2>
+    <div id="gradeStamp" class="result-stamp"></div>
+    <p id="resultText" class="result-text"></p>
+
+    <div class="cta">
+      <a href="https://civiclearn.com/austria/checkout" class="btn">
+        Vollständige Vorbereitung freischalten
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="cl-footer">
+  <div class="cl-footer-inner">
+    © 2026 <span class="cl-footer-brand">CivicLearn</span> — Alle Rechte vorbehalten.
+  </div>
+</footer>
+
+<script>
+/* ---------------------------
+   FREE SAMPLE – AUSTRIA
+---------------------------- */
+
+const QUESTIONS = [
+  {
+    q: "Welche Staatsform hat Österreich?",
+    a: [
+      "Eine demokratische Republik",
+      "Eine konstitutionelle Monarchie",
+      "Ein Bundesstaat ohne Parlament"
+    ]
+  },
+  {
+    q: "Wie heißt das österreichische Parlament?",
+    a: [
+      "Nationalrat und Bundesrat",
+      "Bundestag",
+      "Reichsrat"
+    ]
+  },
+  {
+    q: "Wie viele Bundesländer hat Österreich?",
+    a: [
+      "9",
+      "8",
+      "10"
+    ]
+  },
+  {
+    q: "Welche Stadt ist die Bundeshauptstadt Österreichs?",
+    a: [
+      "Wien",
+      "Graz",
+      "Salzburg"
+    ]
+  },
+  {
+    q: "Welche Farben hat die österreichische Flagge?",
+    a: [
+      "Rot-Weiß-Rot",
+      "Schwarz-Rot-Gold",
+      "Blau-Gelb"
+    ]
+  },
+  {
+    q: "Wer ist das Staatsoberhaupt der Republik Österreich?",
+    a: [
+      "Der Bundespräsident",
+      "Der Bundeskanzler",
+      "Der Nationalratspräsident"
+    ]
+  },
+  {
+    q: "Welches Dokument ist die Grundlage der österreichischen Rechtsordnung?",
+    a: [
+      "Die Bundesverfassung",
+      "Das Zivilgesetzbuch",
+      "Der Staatsvertrag von 1955"
+    ]
+  },
+  {
+    q: "Welches Wahlrecht gilt bei Nationalratswahlen?",
+    a: [
+      "Allgemeines, freies, gleiches und geheimes Wahlrecht",
+      "Zensuswahlrecht",
+      "Erbwahlrecht"
+    ]
+  },
+  {
+    q: "Welches Bundesland liegt ganz im Westen Österreichs?",
+    a: [
+      "Vorarlberg",
+      "Tirol",
+      "Salzburg"
+    ]
+  },
+  {
+    q: "Welche Sprache ist die Amtssprache Österreichs?",
+    a: [
+      "Deutsch",
+      "Österreichisch",
+      "Deutsch und Englisch"
+    ]
+  }
+];
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const model = QUESTIONS.map((item, idx) => {
+  const correct = item.a[0];
+  const shuffled = shuffle(item.a);
+  return {
+    index: idx,
+    text: item.q,
+    choices: shuffled.map(opt => ({ text: opt, isCorrect: opt === correct })),
+    answered: false,
+    pickedIndex: -1
+  };
+});
+
+const qTitle = document.getElementById('qTitle');
+const choicesEl = document.getElementById('choices');
+const btnPrev = document.getElementById('btnPrev');
+const btnNext = document.getElementById('btnNext');
+const progressLabel = document.getElementById('progressLabel');
+const resultPanel = document.getElementById('resultPanel');
+const gradeStamp = document.getElementById('gradeStamp');
+const resultText = document.getElementById('resultText');
+const timerEl = document.getElementById('timer');
+
+let qi = 0, score = 0;
+const total = model.length;
+
+let timerSec = 10 * 60;
+
+const timerInt = setInterval(() => {
+  timerSec--;
+  if (timerSec < 0) {
+    clearInterval(timerInt);
+    finishTest();
+    return;
+  }
+  const m = Math.floor(timerSec / 60).toString().padStart(2, '0');
+  const s = (timerSec % 60).toString().padStart(2, '0');
+  timerEl.textContent = `${m}:${s}`;
+}, 1000);
+
+function renderQuestion() {
+  const q = model[qi];
+  qTitle.textContent = q.text;
+  choicesEl.innerHTML = '';
+  q.choices.forEach((c, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice' + (q.answered ? ' disabled' : '');
+    btn.textContent = c.text;
+    btn.addEventListener('click', () => pick(idx));
+    choicesEl.appendChild(btn);
+  });
+
+  btnPrev.disabled = (qi === 0);
+  btnNext.disabled = !q.answered;
+
+  progressLabel.textContent = `Frage ${qi + 1} von ${total} · Punkte ${score}`;
+
+  if (q.answered) applyRevealStyles();
+
+  btnNext.textContent = (qi === total - 1)
+    ? "Ergebnis anzeigen →"
+    : "Weiter →";
+}
+
+function pick(idx) {
+  const q = model[qi];
+  if (q.answered) return;
+
+  q.answered = true;
+  q.pickedIndex = idx;
+
+  if (q.choices[idx].isCorrect) score++;
+
+  applyRevealStyles();
+  btnNext.disabled = false;
+  progressLabel.textContent = `Frage ${qi + 1} von ${total} · Punkte ${score}`;
+}
+
+function applyRevealStyles() {
+  const q = model[qi];
+  const buttons = choicesEl.querySelectorAll('.choice');
+  buttons.forEach((b, i) => {
+    b.classList.add('disabled');
+    if (q.choices[i].isCorrect) b.classList.add('correct');
+    if (q.pickedIndex === i && !q.choices[i].isCorrect) b.classList.add('wrong');
+  });
+}
+
+btnNext.addEventListener('click', () => {
+  if (qi < total - 1) {
+    qi++;
+    renderQuestion();
+  } else {
+    finishTest();
+  }
+});
+
+btnPrev.addEventListener('click', () => {
+  if (qi > 0) {
+    qi--;
+    renderQuestion();
+  }
+});
+
+function finishTest() {
+  clearInterval(timerInt);
+  document.querySelector('.question-card').style.display = 'none';
+  resultPanel.style.display = 'block';
+
+  const percent = Math.round(score / total * 100);
+  const pass = score >= Math.ceil(total * 0.6);
+
+  gradeStamp.textContent = pass ? "Bestanden" : "Nicht bestanden";
+  gradeStamp.className = "result-stamp " + (pass ? "pass" : "fail");
+
+  resultText.textContent =
+    `Sie haben ${score} von ${total} Fragen richtig beantwortet (${percent} %).`;
+}
+
+renderQuestion();
+</script>
+
+</body>
+</html>
