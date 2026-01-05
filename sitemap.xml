@@ -10,70 +10,70 @@
 
   <!-- Core conversion page -->
   <url>
-    <loc>https://staatsburgerschaftstest.at/kostenloser-test.html</loc>
+    <loc>https://staatsburgerschaftstest.at/kostenloser-test</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.95</priority>
   </url>
 
   <!-- Core informational articles -->
   <url>
-    <loc>https://staatsburgerschaftstest.at/einbuergerungsvoraussetzungen.html</loc>
+    <loc>https://staatsburgerschaftstest.at/einbuergerungsvoraussetzungen</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/ueber-den-staatsbuergerschaftstest.html</loc>
+    <loc>https://staatsburgerschaftstest.at/ueber-den-staatsbuergerschaftstest</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/themen-des-staatsbuergerschaftstests.html</loc>
+    <loc>https://staatsburgerschaftstest.at/themen-des-staatsbuergerschaftstests</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/schwierigste-themen-im-staatsbuergerschaftstest.html</loc>
+    <loc>https://staatsburgerschaftstest.at/schwierigste-themen-im-staatsbuergerschaftstest</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/so-funktioniert-unser-training.html</loc>
+    <loc>https://staatsburgerschaftstest.at/so-funktioniert-unser-training</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/vorbereitung-und-lernmaterialien.html</loc>
+    <loc>https://staatsburgerschaftstest.at/vorbereitung-und-lernmaterialien</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.75</priority>
   </url>
 
   <!-- Secondary -->
   <url>
-    <loc>https://staatsburgerschaftstest.at/kontakt.html</loc>
+    <loc>https://staatsburgerschaftstest.at/kontakt</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.40</priority>
   </url>
 
   <!-- Legal (low priority, indexed but de-emphasized) -->
   <url>
-    <loc>https://staatsburgerschaftstest.at/datenschutz.html</loc>
+    <loc>https://staatsburgerschaftstest.at/datenschutz</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.20</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/rueckerstattung.html</loc>
+    <loc>https://staatsburgerschaftstest.at/rueckerstattung</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.20</priority>
   </url>
 
   <url>
-    <loc>https://staatsburgerschaftstest.at/cookie-richtlinie.html</loc>
+    <loc>https://staatsburgerschaftstest.at/cookie-richtlinie</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>0.20</priority>
   </url>
