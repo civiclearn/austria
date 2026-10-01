@@ -38,509 +38,316 @@
   <meta name="twitter:description" content="Üben Sie mit offiziellen Themen und realistischen Simulationen für den Staatsbürgerschaftstest in Österreich.">
   <meta name="twitter:image" content="https://staatsburgerschaftstest.at/assets/images/og-default.jpg">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/newhome.css">
-
-<style>
-#inline-progressbar {
-  background: linear-gradient(
-    to right,
-    #c8102e 0%,
-    #c8102e 33.33%,
-    #ffffff 33.33%,
-    #ffffff 66.66%,
-    #c8102e 66.66%,
-    #c8102e 100%
-  );
-}
-</style>
+  <link rel="stylesheet" href="/assets/css/home-v2.css">
 </head>
-
 <body>
 
 <!-- HEADER -->
-<header class="cl-header">
-  <div class="cl-header-inner">
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="/" class="logo logo-long"><img alt="AT" src="/assets/images/at.svg"/><span>Staatsbürgerschaftstest Österreich</span></a>
 
-    <a href="/austria/index.html" class="cl-logo">
-      <img src="/assets/images/at.svg" alt="AT" />
-      <span>Staatsbürgerschaftstest Österreich</span>
-    </a>
+    <button class="burger" type="button" aria-label="Menü" aria-expanded="false" aria-controls="site-nav"
+      onclick="var o=document.getElementById('hdr').classList.toggle('menu-open');this.setAttribute('aria-expanded',o)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
 
-    <nav class="cl-nav">
+    <nav class="nav" id="site-nav">
       <a href="/kostenloser-test.html">Kostenloser Test</a>
       <a href="/kontakt.html">Kontakt</a>
       <a href="https://civiclearn.com/austria/login">Login</a>
     </nav>
 
-    <div class="cl-right">
-      <div class="cl-powered">
-        powered by <span>CivicLearn</span>
+    <div class="hdr-right">
+      <div class="powered">
+        <div>powered by <b>CivicLearn</b></div>
+        <a class="tp" href="https://www.trustpilot.com/review/civiclearn.com" target="_blank" rel="noopener" aria-label="CivicLearn auf Trustpilot: 4,5 von 5">
+          <span class="tp-stars" aria-hidden="true">
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="12.5" height="25" fill="#00b67a"/><rect x="12.5" width="12.5" height="25" fill="#dcdce6"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+          </span>
+          <span class="tp-word">Trustpilot</span>
+        </a>
       </div>
-
-      <a href="https://civiclearn.com/austria/checkout" class="cl-btn">
-        Zugang kaufen
-      </a>
+      <a href="https://civiclearn.com/austria/checkout" class="btn btn-primary">Zugang kaufen</a>
     </div>
-
   </div>
 </header>
 
+<main>
+
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-center">
-
-    <div class="hero-kicker">
-      <div class="hero-kicker-dot"></div>
-      Umfassende Vorbereitung auf den österreichischen Staatsbürgerschaftstest - 2026
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Umfassende Vorbereitung auf den österreichischen Staatsbürgerschaftstest - 2026</span>
+      <h1><span>Der österreichische Staatsbürger&shy;schaftstest:</span> Online lernen – klar, strukturiert und effizient.</h1>
+      <p class="hero-sub">Übungsfragen und Simulationen basierend auf den offiziellen Themen der Staatsbürgerschaftsprüfung. Bereiten Sie sich gezielt vor und bestehen Sie sicher.</p>
+      <div class="hero-ctas">
+        <a href="https://civiclearn.com/austria/checkout" class="btn btn-primary" id="hero-cta">Jetzt vorbereiten</a>
+        <a href="#questions-demo" class="btn btn-ghost">Beispielfragen ansehen</a>
+      </div>
+      <p class="hero-meta"><strong>49 € einmalig</strong> · lebenslanger Zugang · kein Abo</p>
+      <div class="rating">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong>Hervorragend</strong>
+        <span>Von tausenden Kandidat:innen genutzt.</span>
+      </div>
     </div>
-
-    <h1 class="hero-title">
-      <span>Der österreichische Staatsbürgerschaftstest:</span><br>
-      Online lernen – klar, strukturiert und effizient.
-    </h1>
-
-    <p class="hero-subtitle">
-      Übungsfragen und Simulationen basierend auf den offiziellen Themen
-      der Staatsbürgerschaftsprüfung.  
-      Bereiten Sie sich gezielt vor und bestehen Sie sicher.
-    </p>
-
-    <div class="hero-actions">
-      <a href="https://civiclearn.com/austria/checkout" class="hero-primary-btn">Jetzt vorbereiten</a>
-      <a href="#questions-demo" class="hero-secondary-btn">Beispielfragen ansehen</a>
+    <div class="hero-img">
+      <img src="/assets/images/devices-at.webp" alt="Auf allen Geräten nutzbar" width="2942" height="1900" fetchpriority="high" decoding="async">
     </div>
+  </div>
+</section>
 
-    <div class="hero-social">
-      <span class="rating-stars">★★★★★</span>
-      <span class="rating-word">Hervorragend</span>
-      <span class="rating-subtext">Von tausenden Kandidat:innen genutzt.</span>
+<!-- THE TEST AT A GLANCE (official source linked below) -->
+<section class="facts" aria-label="Der Test auf einen Blick">
+  <div class="wrap">
+    <div class="facts-grid">
+      <div class="fact"><div class="fact-num">18</div><div class="fact-label">Fragen</div><div class="fact-text">Mehrfachauswahl, 1 bis 3 richtige Antworten pro Frage</div></div>
+      <div class="fact"><div class="fact-num">6</div><div class="fact-label">pro Prüfungsgebiet</div><div class="fact-text">Demokratie, Geschichte Österreichs, Ihr Bundesland</div></div>
+      <div class="fact"><div class="fact-num">12</div><div class="fact-label">Punkte zum Bestehen</div><div class="fact-text">Oder mindestens 3 Punkte in jedem Gebiet</div></div>
+      <div class="fact"><div class="fact-num">0 €</div><div class="fact-label">Kosten des Tests</div><div class="fact-text">Kann beliebig oft wiederholt werden</div></div>
     </div>
-
-    <div class="hero-image-wide">
-      <img src="/assets/images/devices-at.webp" alt="Auf allen Geräten nutzbar">
-    </div>
-
+    <p class="facts-src">Quelle: <a href="https://www.verwaltung.steiermark.at/cms/beitrag/11682614/75773739/" target="_blank" rel="noopener">Land Steiermark, Stadt Wien</a></p>
   </div>
 </section>
 
 <!-- FEATURES -->
-<section>
-  <div class="section-heading">
-    <div class="section-kicker">Strukturierte Vorbereitung</div>
-    <h2 class="section-title">Alles, was Sie zum Bestehen brauchen</h2>
-    <p class="section-lead">
-      Übungstests, realistische Simulationen und klare Erklärungen.
-    </p>
-  </div>
-
-  <div class="features-grid">
-
-    <!-- Karte 1 -->
-    <div class="feature-card">
-      <div class="feature-icon">
-        <img src="/assets/images/geschichte.webp" alt="Geschichte Österreichs">
-      </div>
-      <h3 class="feature-title">Geschichte Österreichs</h3>
-      <p class="feature-text">
-        Fragen zu wichtigen Ereignissen, politischen Entwicklungen und Persönlichkeiten
-        der österreichischen Geschichte vom Mittelalter bis zur Gegenwart.
-      </p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Strukturierte Vorbereitung</span>
+      <h2>Alles, was Sie zum Bestehen brauchen</h2>
+      <p>Übungstests, realistische Simulationen und klare Erklärungen.</p>
     </div>
-
-    <!-- Karte 2 -->
-    <div class="feature-card">
-      <div class="feature-icon">
-        <img src="/assets/images/ordnung.webp" alt="Demokratische Grundordnung">
+    <div class="features">
+      <div class="feature">
+        <img src="/assets/images/geschichte.webp" alt="">
+        <h3>Geschichte Österreichs</h3>
+        <p>Fragen zu wichtigen Ereignissen, politischen Entwicklungen und Persönlichkeiten der österreichischen Geschichte vom Mittelalter bis zur Gegenwart.</p>
       </div>
-      <h3 class="feature-title">Demokratische Ordnung</h3>
-      <p class="feature-text">
-        Kenntnisse über die österreichische Verfassung, Grundrechte, Gewaltenteilung und
-        das politische System der Republik.
-      </p>
-    </div>
-
-    <!-- Karte 3 -->
-    <div class="feature-card">
-      <div class="feature-icon">
-        <img src="/assets/images/bundesland.webp" alt="Geschichte meines Bundeslandes">
+      <div class="feature">
+        <img src="/assets/images/ordnung.webp" alt="">
+        <h3>Demokratische Ordnung</h3>
+        <p>Kenntnisse über die österreichische Verfassung, Grundrechte, Gewaltenteilung und das politische System der Republik.</p>
       </div>
-      <h3 class="feature-title">Geschichte meines Bundeslandes</h3>
-      <p class="feature-text">
-        Regionale Themen zu Ihrem Bundesland – Politik, Kultur, Geografie und
-        bedeutende historische Ereignisse.
-      </p>
+      <div class="feature">
+        <img src="/assets/images/bundesland.webp" alt="">
+        <h3>Geschichte meines Bundeslandes</h3>
+        <p>Regionale Themen zu Ihrem Bundesland – Politik, Kultur, Geografie und bedeutende historische Ereignisse.</p>
+      </div>
     </div>
-
   </div>
 </section>
 
-
-<!-- INLINE TEST -->
-<div id="questions-demo">
-<section class="inline-test">
-  <div class="inline-test-inner">
-
-    <h2 class="inline-test-title">Probieren Sie echte Prüfungsfragen kostenlos aus</h2>
-    <p class="inline-test-subtitle">Format und Schwierigkeitsgrad kennenlernen.</p>
-
-    <div class="inline-test-cta-top">
-      <a href="https://civiclearn.com/austria/checkout" class="hero-primary-btn">
-        Vollzugang · Hunderte Fragen
-      </a>
-    </div>
-
-    <div class="inline-progress-container">
-      <div class="inline-test-inner">
-        <div id="inline-progress-text"></div>
-        <div class="inline-progressbar-wrapper">
-          <div id="inline-progressbar"></div>
-        </div>
+<!-- FREE QUESTIONS (rendered by /assets/js/hometest.js) -->
+<section class="section quiz" id="questions-demo">
+  <div class="wrap">
+    <div class="quiz-top">
+      <div class="section-head">
+        <span class="kicker">Kostenlos üben</span>
+        <h2>Probieren Sie echte Prüfungsfragen kostenlos aus</h2>
+        <p>Format und Schwierigkeitsgrad kennenlernen.</p>
       </div>
+      <a href="https://civiclearn.com/austria/checkout" class="btn btn-ghost">Vollzugang · Hunderte Fragen</a>
     </div>
-
-    <div class="inline-test-inner">
-      <div id="inline-test-questions"></div>
+    <div class="progress">
+      <div id="inline-progress-text"></div>
+      <div class="progress-track"><div id="inline-progressbar"></div></div>
     </div>
+    <div id="inline-test-questions"></div>
+  </div>
+</section>
 
 <!-- PRICING -->
-<section class="premium-pricing">
-  <div class="pricing-card">
-
-    <div class="pricing-top">
-      <span class="pricing-tag">Premium-Zugang</span>
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker">Ein einfacher Preis</span>
+      <h2>Alles inklusive, lebenslang</h2>
     </div>
-
-    <div class="pricing-price">
-      <div class="amount">49 €</div>
-      <div class="subtitle">Einmalzahlung — lebenslanger Zugriff</div>
+    <div class="price-card">
+      <div class="price-left">
+        <span class="price-tag">Premium-Zugang</span>
+        <div class="price-amount">49 €<small>einmalig</small></div>
+        <p class="price-sub">Lebenslanger Zugang. Einmal zahlen, so lange üben, wie Sie brauchen.</p>
+        <a class="btn btn-primary" href="https://civiclearn.com/austria/checkout">Jetzt starten</a>
+        <p class="price-note">Kein Abonnement · Sofort freigeschaltet</p>
+      </div>
+      <div class="price-right">
+        <h3>Das ist enthalten</h3>
+        <ul class="checks">
+          <li>Hunderte Übungsfragen</li>
+          <li>Realistische Prüfungssimulationen</li>
+          <li>Fragen zu Bundesland &amp; Demokratie</li>
+          <li>Themenbasierte Tests</li>
+          <li>Analyse häufiger Fehler</li>
+          <li>Fortschrittsstatistiken</li>
+          <li>Audio-Unterstützung</li>
+          <li>Flashcards</li>
+          <li>Lernmaterialien</li>
+          <li>Mobil, Tablet &amp; Desktop</li>
+          <li>Tägliche Übungstests</li>
+          <li>Sofortiger Zugriff nach Zahlung</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="pricing-divider"></div>
-
-    <ul class="feature-list">
-      <li>Hunderte Übungsfragen</li>
-      <li>Realistische Prüfungssimulationen</li>
-      <li>Fragen zu Bundesland & Demokratie</li>
-      <li>Themenbasierte Tests</li>
-      <li>Analyse häufiger Fehler</li>
-      <li>Fortschrittsstatistiken</li>
-      <li>Audio-Unterstützung</li>
-      <li>Flashcards</li>
-      <li>Lernmaterialien</li>
-      <li>Mobil, Tablet & Desktop</li>
-      <li>Tägliche Übungstests</li>
-      <li>Sofortiger Zugriff nach Zahlung</li>
-    </ul>
-
-    <a class="pricing-cta" href="https://civiclearn.com/austria/checkout">
-      Jetzt starten
-    </a>
-
-  </div>
-
-  <div class="pricing-guarantee">
-    Einmal zahlen. Kein Abonnement.
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="cl-testimonials">
-  <div class="cl-testimonials-header">
-    <h2>Erfahrungen von Prüfungskandidat:innen</h2>
-    <p>So haben sich andere erfolgreich vorbereitet</p>
-  </div>
-
-  <div class="cl-testimonials-grid">
-
-    <div class="cl-testimonial-card">
-      <p class="cl-testimonial-text">
-        „Die Simulationen haben mir sehr geholfen. Am Prüfungstag war ich ruhig
-        und wusste genau, was mich erwartet.“
-      </p>
-      <div class="cl-testimonial-author">Julia M.</div>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker">Von unseren Nutzer:innen</span>
+      <h2>Erfahrungen von Prüfungskandidat:innen</h2>
     </div>
-
-    <div class="cl-testimonial-card">
-      <p class="cl-testimonial-text">
-        „Besonders die Fragen zum Bundesland waren entscheidend.
-        Sehr klar aufgebaut.“
-      </p>
-      <div class="cl-testimonial-author">Ahmed S.</div>
+    <div class="quotes">
+      <figure class="quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>„Die Simulationen haben mir sehr geholfen. Am Prüfungstag war ich ruhig
+        und wusste genau, was mich erwartet.“</p>
+        <figcaption class="quote-by"><img src="" alt="" width="40" height="40">Julia M.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>„Besonders die Fragen zum Bundesland waren entscheidend.
+        Sehr klar aufgebaut.“</p>
+        <figcaption class="quote-by"><img src="" alt="" width="40" height="40">Ahmed S.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>„Ich habe mich gezielt vorbereitet und den Test gleich beim ersten Mal bestanden.“</p>
+        <figcaption class="quote-by"><img src="" alt="" width="40" height="40">Marko P.</figcaption>
+      </figure>
     </div>
-
-    <div class="cl-testimonial-card">
-      <p class="cl-testimonial-text">
-        „Ich habe mich gezielt vorbereitet und den Test gleich beim ersten Mal bestanden.“
-      </p>
-      <div class="cl-testimonial-author">Marko P.</div>
-    </div>
-
+    <p class="quotes-more">Weitere Bewertungen von CivicLearn auf <a href="https://www.trustpilot.com/review/civiclearn.com" target="_blank" rel="noopener">Trustpilot</a>.</p>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="cl-faq">
-
-  <div class="section-heading">
-    <div class="section-kicker">Häufige Fragen</div>
-    <h2 class="section-title">FAQ – Vorbereitung Staatsbürgerschaftstest Österreich</h2>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Handelt es sich um ein Abonnement?</span>
+<section class="section" style="padding-top:0">
+  <div class="wrap faq-grid">
+    <div class="section-head">
+      <span class="kicker">Häufige Fragen</span>
+      <h2>FAQ – Vorbereitung Staatsbürgerschaftstest Österreich</h2>
+      <p>Noch eine Frage? <a href="/kontakt.html">Schreiben Sie uns</a>.</p>
     </div>
-    <div class="faq-answer">
-      <p>
-        Nein. Es handelt sich um eine <strong>einmalige Zahlung</strong>.
-        Sie erhalten unbegrenzten Zugang zu allen Trainingsinhalten.
-      </p>
-    </div>
-  </div>
-
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Ich habe gerade bezahlt – wie geht es weiter?</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        Nach der Zahlung werden Sie zur Login-Seite weitergeleitet.
-        Geben Sie dort einfach die beim Kauf verwendete E-Mail-Adresse ein.
-        Sie erhalten anschließend einen <strong>Einmal-Code</strong>,
-        mit dem Sie sich sofort in Ihren persönlichen Bereich einloggen können.
-      </p>
+    <div class="faq-list">
+      <details><summary>Handelt es sich um ein Abonnement?</summary><p> Nein. Es handelt sich um eine <strong>einmalige Zahlung</strong>. Sie erhalten unbegrenzten Zugang zu allen Trainingsinhalten. </p></details>
+      <details><summary>Ich habe gerade bezahlt – wie geht es weiter?</summary><p> Nach der Zahlung werden Sie zur Login-Seite weitergeleitet. Geben Sie dort einfach die beim Kauf verwendete E-Mail-Adresse ein. Sie erhalten anschließend einen <strong>Einmal-Code</strong>, mit dem Sie sich sofort in Ihren persönlichen Bereich einloggen können. </p></details>
+      <details><summary>Sind das die offiziellen Fragen des Staatsbürgerschaftstests?</summary><p> Teilweise – aber mit einem wichtigen Unterschied: </p> <p> In Österreich gibt es <strong>keinen offiziell veröffentlichten Fragenkatalog für die bundesweiten Themen</strong> (Geschichte Österreichs und demokratische Ordnung). Für diese Bereiche basieren unsere Fragen auf den <strong>offiziellen Lernunterlagen des Bundesministeriums für Inneres (BMI)</strong> und bilden den Prüfungsstoff realitätsnah ab. </p> <p> Die <strong>Fragen zu den Bundesländern</strong> hingegen werden von den Ländern offiziell veröffentlicht. Diese <strong>offiziellen Bundesländerfragen</strong> sind vollständig in unserem Training enthalten. </p> <p> Wir stehen in <strong>keiner Verbindung zu Behörden</strong> und können nicht garantieren, dass identische Fragen im Test vorkommen. Unser Ziel ist eine möglichst effektive und realistische Vorbereitung. </p></details>
+      <details><summary>Ist dies eine Anmeldung zum offiziellen Staatsbürgerschaftstest?</summary><p> Nein. Diese Plattform dient ausschließlich der <strong>Vorbereitung auf den Staatsbürgerschaftstest</strong>. </p> <p> Die Anmeldung zur Prüfung erfolgt über die zuständige Behörde (z. B. Bezirkshauptmannschaft oder Magistrat). Unser Training führt zu <strong>keinem offiziellen Zertifikat</strong>. </p></details>
+      <details><summary>Wie lange dauert die Vorbereitung in der Regel?</summary><p> Das hängt von Ihren Vorkenntnissen ab. Die meisten Nutzerinnen und Nutzer bereiten sich <strong>ein bis drei Wochen</strong> gezielt vor, bevor sie sich sicher für den Test fühlen. </p></details>
+      <details><summary>Was sind Prüfungssimulationen?</summary><p> In den Simulationen stellen wir einen vollständigen Test mit <strong>18 Fragen</strong> zusammen: </p> <ul> <li>12 Fragen zu bundesweiten Themen (Geschichte &amp; demokratische Ordnung)</li> <li>6 Fragen zu Ihrem gewählten Bundesland</li> </ul> <p> Die Simulationen sind zeitlich begrenzt und orientieren sich am Aufbau des echten Tests. </p></details>
+      <details><summary>Was sind Schnelltests?</summary><p> Schnelltests bestehen aus wenigen, zufällig ausgewählten Fragen aus dem gesamten Fragenpool. </p> <p> Sie eignen sich besonders gut, wenn Sie wenig Zeit haben oder zwischendurch üben möchten. Für eine gründliche Vorbereitung empfehlen wir jedoch, zusätzlich vollständige Simulationen zu absolvieren. </p></details>
     </div>
   </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Sind das die offiziellen Fragen des Staatsbürgerschaftstests?</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        Teilweise – aber mit einem wichtigen Unterschied:
-      </p>
-      <p>
-        In Österreich gibt es <strong>keinen offiziell veröffentlichten Fragenkatalog
-        für die bundesweiten Themen</strong> (Geschichte Österreichs und demokratische Ordnung).
-        Für diese Bereiche basieren unsere Fragen auf den
-        <strong>offiziellen Lernunterlagen des Bundesministeriums für Inneres (BMI)</strong>
-        und bilden den Prüfungsstoff realitätsnah ab.
-      </p>
-      <p>
-        Die <strong>Fragen zu den Bundesländern</strong> hingegen
-        werden von den Ländern offiziell veröffentlicht.
-        Diese <strong>offiziellen Bundesländerfragen</strong>
-        sind vollständig in unserem Training enthalten.
-      </p>
-      <p>
-        Wir stehen in <strong>keiner Verbindung zu Behörden</strong>
-        und können nicht garantieren, dass identische Fragen im Test vorkommen.
-        Unser Ziel ist eine möglichst effektive und realistische Vorbereitung.
-      </p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Ist dies eine Anmeldung zum offiziellen Staatsbürgerschaftstest?</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        Nein. Diese Plattform dient ausschließlich der
-        <strong>Vorbereitung auf den Staatsbürgerschaftstest</strong>.
-      </p>
-      <p>
-        Die Anmeldung zur Prüfung erfolgt über die zuständige Behörde
-        (z. B. Bezirkshauptmannschaft oder Magistrat).
-        Unser Training führt zu <strong>keinem offiziellen Zertifikat</strong>.
-      </p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Wie lange dauert die Vorbereitung in der Regel?</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        Das hängt von Ihren Vorkenntnissen ab.
-        Die meisten Nutzerinnen und Nutzer bereiten sich
-        <strong>ein bis drei Wochen</strong> gezielt vor,
-        bevor sie sich sicher für den Test fühlen.
-      </p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Was sind Prüfungssimulationen?</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        In den Simulationen stellen wir einen vollständigen Test
-        mit <strong>18 Fragen</strong> zusammen:
-      </p>
-      <ul>
-        <li>12 Fragen zu bundesweiten Themen (Geschichte & demokratische Ordnung)</li>
-        <li>6 Fragen zu Ihrem gewählten Bundesland</li>
-      </ul>
-      <p>
-        Die Simulationen sind zeitlich begrenzt
-        und orientieren sich am Aufbau des echten Tests.
-      </p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Was sind Schnelltests?</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        Schnelltests bestehen aus wenigen, zufällig ausgewählten Fragen
-        aus dem gesamten Fragenpool.
-      </p>
-      <p>
-        Sie eignen sich besonders gut,
-        wenn Sie wenig Zeit haben oder zwischendurch üben möchten.
-        Für eine gründliche Vorbereitung empfehlen wir jedoch,
-        zusätzlich vollständige Simulationen zu absolvieren.
-      </p>
-    </div>
-  </div>
-
 </section>
+
 <!-- ARTICLES -->
-<section class="cl-articles">
-  <div class="cl-articles-inner">
-
-  <div class="section-heading">
-    <div class="section-kicker">Wissenswertes</div>
-    <h2 class="section-title">Rund um den Staatsbürgerschaftstest</h2>
-    <p class="section-lead">
-      Kurze Leitfäden und Erklärungen zur Vorbereitung, zum Ablauf
-      und zu den wichtigsten Themen der Prüfung.
-    </p>
-  </div>
-
-  <!-- PASSPORT RANKING STRIP — Wissenswertes (further-reading pointer → ranking page) -->
-  <a href="https://civiclearn.com/passport-ranking"
-     style="display:flex;align-items:center;gap:14px;max-width:820px;margin:0 auto 24px;padding:13px 22px;background:#fff;border:1px solid #e5e1da;border-left:3px solid #7c3aed;border-radius:12px;text-decoration:none;color:#1d2230;text-align:left;transition:border-color .15s,box-shadow .15s;"
-     onmouseover="this.style.borderColor='#7c3aed';this.style.boxShadow='0 4px 16px rgba(124,58,237,.12)'"
-     onmouseout="this.style.borderColor='#e5e1da';this.style.borderLeftColor='#7c3aed';this.style.boxShadow='none'">
-    <span style="flex:0 0 auto;background:#f5f0ff;color:#7c3aed;font-weight:700;font-size:.7rem;letter-spacing:.02em;padding:5px 10px;border-radius:6px;white-space:nowrap;">PASS-RANGLISTE</span>
-    <span style="flex:1 1 auto;min-width:0;font-size:.86rem;line-height:1.45;color:#555;text-align:left;">
-      <strong style="color:#1a1a2e;">Österreich hat den 10.-besten Pass der Welt</strong> — nach dem, was wirklich zählt.
-    </span>
-    <span style="flex:0 0 auto;color:#7c3aed;font-weight:600;font-size:.84rem;white-space:nowrap;">Zur Rangliste &rarr;</span>
-  </a>
-
-  <div class="articles-grid">
-
-    <a href="/einbuergerungsvoraussetzungen.html" class="article-card">
-      <h3>Einbürgerungsvoraussetzungen</h3>
-      <p>
-        Überblick über Aufenthalt, Sprache, Testpflicht,
-        finanzielle Voraussetzungen und Sonderregelungen.
-      </p>
-    </a>
-
-    <a href="/ueber-den-staatsbuergerschaftstest.html" class="article-card">
-      <h3>Über den Staatsbürgerschaftstest</h3>
-      <p>
-        Aufbau, Bewertung, Prüfungsinhalte und rechtliche Grundlagen
-        der österreichischen Staatsbürgerschaftsprüfung.
-      </p>
-    </a>
-
-    <a href="/themen-des-staatsbuergerschaftstests.html" class="article-card">
-      <h3>Themen des Staatsbürgerschaftstests</h3>
-      <p>
-        Geschichte Österreichs, demokratische Ordnung
-        und bundeslandspezifische Inhalte im Überblick.
-      </p>
-    </a>
-
-    <a href="/schwierigste-themen-im-staatsbuergerschaftstest.html" class="article-card">
-      <h3>Die schwierigsten Themen</h3>
-      <p>
-        Typische Stolpersteine bei Geschichte, Institutionen
-        und Verfassungsfragen – mit Lerntipps.
-      </p>
-    </a>
-
-    <a href="/so-funktioniert-unser-training.html" class="article-card">
-      <h3>So funktioniert unser Training</h3>
-      <p>
-        Erklärung der Trainingsmodi, Simulationen,
-        Auswertungen und Lernstatistiken.
-      </p>
-    </a>
-
-    <a href="/vorbereitung-und-lernmaterialien.html" class="article-card">
-      <h3>Vorbereitung & Lernmaterialien</h3>
-      <p>
-        Offizielle Unterlagen, empfohlene Lernstrategien
-        und digitale Vorbereitungsmöglichkeiten.
-      </p>
-    </a>
-
-  </div>
-
-  </div>
-</section>
-
-
-<!-- COMPATIBILITY -->
-<section class="compat-section">
-  <div class="compat-inner">
-
-    <h2 class="compat-title">Kompatibel mit allen modernen Geräten und Browsern</h2>
-
-    <div class="compat-grid">
-      <div class="compat-item"><img src="/assets/images/logos/windows.svg"><p>Windows</p></div>
-      <div class="compat-item"><img src="/assets/images/logos/macos.svg"><p>macOS</p></div>
-      <div class="compat-item"><img src="/assets/images/logos/android.svg"><p>Android</p></div>
-      <div class="compat-item"><img src="/assets/images/logos/ios.svg"><p>iPhone / iPad</p></div>
-      <div class="compat-item"><img src="/assets/images/logos/chrome.svg"><p>Chrome</p></div>
-      <div class="compat-item"><img src="/assets/images/logos/safari.svg"><p>Safari</p></div>
-      <div class="compat-item"><img src="/assets/images/logos/firefox.svg"><p>Firefox</p></div>
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Wissenswertes</span>
+      <h2>Rund um den Staatsbürgerschaftstest</h2>
+      <p>Kurze Leitfäden und Erklärungen zur Vorbereitung, zum Ablauf und zu den wichtigsten Themen der Prüfung.</p>
     </div>
-
+    <div class="articles-grid"> <a class="article-card" href="/einbuergerungsvoraussetzungen.html"> <h3>Einbürgerungsvoraussetzungen</h3> <p> Überblick über Aufenthalt, Sprache, Testpflicht, finanzielle Voraussetzungen und Sonderregelungen. </p> </a> <a class="article-card" href="/ueber-den-staatsbuergerschaftstest.html"> <h3>Über den Staatsbürgerschaftstest</h3> <p> Aufbau, Bewertung, Prüfungsinhalte und rechtliche Grundlagen der österreichischen Staatsbürgerschaftsprüfung. </p> </a> <a class="article-card" href="/themen-des-staatsbuergerschaftstests.html"> <h3>Themen des Staatsbürgerschaftstests</h3> <p> Geschichte Österreichs, demokratische Ordnung und bundeslandspezifische Inhalte im Überblick. </p> </a> <a class="article-card" href="/schwierigste-themen-im-staatsbuergerschaftstest.html"> <h3>Die schwierigsten Themen</h3> <p> Typische Stolpersteine bei Geschichte, Institutionen und Verfassungsfragen – mit Lerntipps. </p> </a> <a class="article-card" href="/so-funktioniert-unser-training.html"> <h3>So funktioniert unser Training</h3> <p> Erklärung der Trainingsmodi, Simulationen, Auswertungen und Lernstatistiken. </p> </a> <a class="article-card" href="/vorbereitung-und-lernmaterialien.html"> <h3>Vorbereitung &amp; Lernmaterialien</h3> <p> Offizielle Unterlagen, empfohlene Lernstrategien und digitale Vorbereitungsmöglichkeiten. </p> </a> </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
+<!-- CLOSING CTA -->
+<section style="padding:0 0 40px">
+  <div class="wrap">
+    <div class="closing">
+      <div>
+        <h2>Bereit, den Test beim ersten Mal zu bestehen?</h2>
+        <p>Hunderte Übungsfragen, realistische Simulationen und Fragen zu Ihrem Bundesland an einem Ort. 49 €, einmalig.</p>
+      </div>
+      <a href="https://civiclearn.com/austria/checkout" class="btn btn-primary">Jetzt vorbereiten</a>
+    </div>
+  </div>
+</section>
+
+<!-- RANKING + DEVICES -->
+<section style="padding:24px 0 0">
+  <div class="wrap">
+    <a class="rank" href="https://civiclearn.com/passport-ranking">
+      <span class="rank-tag">PASS-RANGLISTE</span>
+      <span><strong>Österreich hat den 10.-besten Pass der Welt</strong> — nach dem, was wirklich zählt.</span>
+      <span class="rank-go">Zur Rangliste →</span>
+    </a>
+    <div class="devices" aria-label="Kompatibel mit allen modernen Geräten und Browsern">
+      <span><img src="/assets/images/logos/windows.svg" alt="">Windows</span>
+      <span><img src="/assets/images/logos/macos.svg" alt="">macOS</span>
+      <span><img src="/assets/images/logos/android.svg" alt="">Android</span>
+      <span><img src="/assets/images/logos/ios.svg" alt="">iPhone / iPad</span>
+      <span><img src="/assets/images/logos/chrome.svg" alt="">Chrome</span>
+      <span><img src="/assets/images/logos/safari.svg" alt="">Safari</span>
+      <span><img src="/assets/images/logos/firefox.svg" alt="">Firefox</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
     <div>© 2026 Staatsburgerschaftstest.at</div>
-    <div class="footer-links">
+    <nav>
       <a href="https://civiclearn.com/insights">Insights</a>
       <a href="/kostenloser-test.html">Kostenloser Test</a>
       <a href="/kontakt.html">Kontakt</a>
       <a href="/datenschutz.html">Datenschutz</a>
-	  <a href="/cookie-richtlinie.html">Cookie-richtlinie</a>
-	  <a href="/rueckerstattung.html">Rueckerstattung</a>
-    </div>
+      <a href="/cookie-richtlinie.html">Cookie-richtlinie</a>
+      <a href="/rueckerstattung.html">Rueckerstattung</a>
+    </nav>
   </div>
 </footer>
 
+<!-- Mobile sticky CTA (appears once the hero button scrolls away, hides over pricing) -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <span><b>49 € einmalig</b>Lebenslanger Zugang</span>
+  <a href="https://civiclearn.com/austria/checkout" class="btn btn-primary" tabindex="-1">Jetzt starten</a>
+</div>
+
 <script src="/assets/js/hometest.js"></script>
 <script>
-document.querySelectorAll(".faq-item").forEach(item => {
-  const q = item.querySelector(".faq-question");
-  q.addEventListener("click", () => {
-    document.querySelectorAll(".faq-item").forEach(i => {
-      if (i !== item) i.classList.remove("open");
-    });
-    item.classList.toggle("open");
-  });
-});
+(function(){
+  var s=document.getElementById('sticky-cta'), h=document.getElementById('hero-cta'), p=document.getElementById('pricing'), q=document.getElementById('questions-demo');
+  if(!('IntersectionObserver' in window)||!s||!h) return;
+  var heroGone=false, priceVisible=false, quizVisible=false;
+  function upd(){var on=heroGone&&!priceVisible&&!quizVisible;s.classList.toggle('show',on);s.setAttribute('aria-hidden',on?'false':'true');}
+  new IntersectionObserver(function(e){heroGone=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;upd();}).observe(h);
+  if(p) new IntersectionObserver(function(e){priceVisible=e[0].isIntersecting;upd();},{threshold:.15}).observe(p);
+  if(q) new IntersectionObserver(function(e){quizVisible=e[0].isIntersecting;upd();},{threshold:.05}).observe(q);
+})();
 </script>
-
+<script>
+/* Phones: free questions become a swipeable row and auto-advance after each answer */
+(function(){
+  var c=document.getElementById('inline-test-questions'); if(!c||!window.matchMedia) return;
+  var mq=window.matchMedia('(max-width:860px)');
+  c.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.inline-option-btn'); if(!b||!mq.matches) return;
+    var card=b.closest('.inline-question-card'); if(!card) return;
+    var wrong=!!card.querySelector('.inline-wrong');
+    setTimeout(function(){
+      var n=card.nextElementSibling; if(!n) return;
+      var pad=parseInt(getComputedStyle(c).paddingLeft,10)||0;
+      c.scrollTo({left:n.offsetLeft-pad,behavior:'smooth'});
+    }, wrong?2000:1000);
+  });
+})();
+</script>
 </body>
 </html>

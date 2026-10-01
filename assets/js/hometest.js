@@ -289,7 +289,7 @@ updateProgressBar();
 // ----------------------------
 // CONTINUE BUTTON
 // ----------------------------
-expandBtn.onclick = () => {
+if (expandBtn) expandBtn.onclick = () => {
   currentRow = 1;
   renderRow(currentRow);
   expandBtn.style.display = "none";
